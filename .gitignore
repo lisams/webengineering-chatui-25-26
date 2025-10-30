@@ -1,5 +1,8 @@
 scss/scss-solution/*
 scss/scss-solution
+
+scss/scss-exercise/styles/*.css
+
 tailwind-solution/*
 tailwind-solution
 .DS_Store
