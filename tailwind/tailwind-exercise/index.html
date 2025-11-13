@@ -4,23 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KWM Chat UI (Tailwind)</title>
-    <script src="tailwind.config.js"></script>
     <link rel="stylesheet" href="dist/main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
-        body {
-            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif
-        }
+      body {
+        font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      }
     </style>
   </head>
   <body class="">
     <div class="">
-      <aside class="text-fge">
+      <aside class="">
         <header class="">
           <h1 class="">Chats</h1>
         </header>
         <div class="">
-          <input type="search" placeholder="Suchen…" class="" />
+          <input
+            type="search"
+            placeholder="Suchen…"
+            class=""
+          />
         </div>
         <ul class="">
           <li class="">
@@ -59,29 +61,39 @@
 
         <section class="">
           <div class="">
-            <div class="">Hey! Wie geht's?</div>
+            <div class="">
+              Hey! Wie geht's?
+            </div>
             <time class="">10:08</time>
           </div>
           <div class="">
-            <div class="">Alles gut! Und dir? 😊</div>
+            <div class="">
+              Alles gut! Und dir? 😊
+            </div>
             <div class="">
               <time class="">10:09</time>
               <span class="" title="gesendet">✓</span>
             </div>
           </div>
           <div class="">
-            <div class="">Top! Treffen wir uns um 17:00?</div>
+            <div class="">
+              Top! Treffen wir uns um 17:00?
+            </div>
             <time class="">10:10</time>
           </div>
           <div class="">
-            <div class="">Passt! Bis später 👋</div>
+            <div class="">
+              Passt! Bis später 👋
+            </div>
             <div class="">
               <time class="">10:12</time>
               <span class="" title="zugestellt">✓✓</span>
             </div>
           </div>
           <div class="">
-            <div class="">Perfekt, freu mich! 📎</div>
+            <div class="">
+              Perfekt, freu mich! 📎
+            </div>
             <div class="">
               <time class="">10:13</time>
               <span class="" title="gelesen">✓✓</span>
@@ -95,7 +107,10 @@
             <input id="tw-file" type="file" multiple hidden />
           </label>
           <div id="tw-chips" class=""></div>
-          <input class="" placeholder="Nachricht schreiben…" />
+          <input
+            class=""
+            placeholder="Nachricht schreiben…"
+          />
           <button class="">Senden</button>
         </form>
       </main>
