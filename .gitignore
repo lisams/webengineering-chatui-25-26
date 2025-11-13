@@ -3,6 +3,10 @@ scss/scss-solution
 
 scss/scss-exercise/styles/*.css
 
+scss/scss-solutions/group1/node_modules
+scss/scss-solutions/group2/node_modules
+scss/scss-solutions/sample/node_modules
+
 tailwind-solution/*
 tailwind-solution
 .DS_Store
