@@ -9,7 +9,7 @@ Project for course Web Engineering
 - npm i
 - npm run dev
 
-## Tailwind
+## Tailwind CSS
 
 - cd tailwind
 - cd tailwind-exercise
