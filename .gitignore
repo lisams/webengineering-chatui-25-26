@@ -1,6 +1,3 @@
-scss/scss-solution/*
-scss/scss-solution
-
 scss/scss-exercise/styles/*.css
 
 scss/scss-solutions/group1/node_modules
@@ -11,3 +8,5 @@ tailwind-solution/*
 tailwind-solution
 .DS_Store
 .idea/*
+
+tailwind/tailwind-exercise/node_modules

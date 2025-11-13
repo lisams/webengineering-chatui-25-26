@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KWM Chat UI (Tailwind)</title>
+    <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="dist/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif
+        }
+    </style>
+  </head>
+  <body class="">
+    <div class="">
+      <aside class="text-fge">
+        <header class="">
+          <h1 class="">Chats</h1>
+        </header>
+        <div class="">
+          <input type="search" placeholder="Suchen…" class="" />
+        </div>
+        <ul class="">
+          <li class="">
+            <img class="" src="images/contacts/anna.jpeg" alt="Anna" />
+            <div class="">
+              <div class="">Anna</div>
+              <div class="">Bis später! 👋</div>
+            </div>
+            <time class="">10:12</time>
+          </li>
+          <li class="">
+            <img class="" src="images/contacts/max.jpeg" alt="Max" />
+            <div class="">
+              <div class="">Max</div>
+              <div class="">Alles klar.</div>
+            </div>
+            <time class="">Gestern</time>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="">
+        <header class="">
+          <div class="">
+            <img class="" src="images/contacts/anna.jpeg" alt="Anna" />
+            <div>
+              <div class="">Anna</div>
+              <div class="">online</div>
+            </div>
+          </div>
+          <div class="">
+            <button>🔎</button>
+            <button>⋯</button>
+          </div>
+        </header>
+
+        <section class="">
+          <div class="">
+            <div class="">Hey! Wie geht's?</div>
+            <time class="">10:08</time>
+          </div>
+          <div class="">
+            <div class="">Alles gut! Und dir? 😊</div>
+            <div class="">
+              <time class="">10:09</time>
+              <span class="" title="gesendet">✓</span>
+            </div>
+          </div>
+          <div class="">
+            <div class="">Top! Treffen wir uns um 17:00?</div>
+            <time class="">10:10</time>
+          </div>
+          <div class="">
+            <div class="">Passt! Bis später 👋</div>
+            <div class="">
+              <time class="">10:12</time>
+              <span class="" title="zugestellt">✓✓</span>
+            </div>
+          </div>
+          <div class="">
+            <div class="">Perfekt, freu mich! 📎</div>
+            <div class="">
+              <time class="">10:13</time>
+              <span class="" title="gelesen">✓✓</span>
+            </div>
+          </div>
+        </section>
+
+        <form class="" onsubmit="return false;">
+          <button type="button" id="tw-emoji" class="">😊</button>
+          <label class="">📎
+            <input id="tw-file" type="file" multiple hidden />
+          </label>
+          <div id="tw-chips" class=""></div>
+          <input class="" placeholder="Nachricht schreiben…" />
+          <button class="">Senden</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
