@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/main.css -o ./dist/main.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/main.css -o ./dist/main.css --watch"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.0"
+    "tailwindcss": "^4.1.0",
+    "@tailwindcss/cli": "^4.1.0"
   }
 }
