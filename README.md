@@ -11,4 +11,7 @@ Project for course Web Engineering
 
 ## Tailwind
 
-- ...
+- cd tailwind
+- cd tailwind-exercise
+- npm i
+- npm run dev
