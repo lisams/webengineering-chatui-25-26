@@ -1,0 +1,21 @@
+
+@use 'colors';
+@use 'mixins';
+@use 'layout';
+@use 'sidebar';
+@use 'chat';
+@use 'messages';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.app {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--font-color);
+}

@@ -1,0 +1,87 @@
+@use 'mixins' as *;
+
+.sidebar {
+  @include card;
+
+  &__header {
+    @include cardHeader;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  &__search {
+    padding: 12px 16px;
+  }
+
+  &__search-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background-color: transparent;
+
+    &::placeholder {
+      color: var(--font-color);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px var(--primary);
+    }
+  }
+}
+
+.chatlist {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 40px 1fr auto;
+    gap: 12px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 12px;
+
+    &--active {
+      background-color: rgba(16, 185, 129, 0.12);
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+  }
+
+  &__avatar {
+    @include avatar;
+  }
+
+  &__name {
+    font-weight: 600;
+  }
+
+  &__last {
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+
+  &__time {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .chatlist {
+    &__item {
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.12);
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KWM Chat UI</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/main.css" />
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif
+    }
+  </style>
+</head>
+
+<body class="app">
+  <div class="layout">
+    <aside class="sidebar">
+      <header class="sidebar__header">
+        <h1 class="sidebar__title">Chats</h1>
+      </header>
+      <div class="sidebar__search">
+        <input type="search" placeholder="Suchen…" class="sidebar__search-input" />
+      </div>
+      <ul class="chatlist">
+        <li class="chatlist__item chatlist__item--active">
+          <img class="chatlist__avatar" src="img/contacts/anna.jpeg" alt="Anna" />
+          <div class="chatlist__meta">
+            <div class="chatlist__name">Anna</div>
+            <div class="chatlist__last">Bis später! 👋</div>
+          </div>
+          <time class="chatlist__time">10:12</time>
+        </li>
+        <li class="chatlist__item">
+          <img class="chatlist__avatar" src="img/contacts/max.jpeg" alt="Max" />
+          <div class="chatlist__meta">
+            <div class="chatlist__name">Max</div>
+            <div class="chatlist__last">Alles klar.</div>
+          </div>
+          <time class="chatlist__time">Gestern</time>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="chat">
+      <header class="chat__header">
+        <div class="chat__peer">
+          <img class="chat__avatar" src="img/contacts/anna.jpeg" alt="Anna" />
+          <div>
+            <div class="chat__name">Anna</div>
+            <div class="chat__status">online</div>
+          </div>
+        </div>
+        <div class="chat__actions">
+          <button class="icon-btn" aria-label="Suchen">🔎</button>
+          <button class="icon-btn" aria-label="Mehr">⋯</button>
+        </div>
+      </header>
+
+      <section class="messages" aria-live="polite">
+        <div class="msg msg--in">
+          <div class="msg__bubble tw-bubble-in">Hey! Wie geht's?</div>
+          <time class="msg__time">10:08</time>
+        </div>
+        <div class="msg msg--out is-sent">
+          <div class="msg__bubble tw-bubble-out">Alles gut! Und dir? 😊</div>
+          <div class="msg__meta">
+            <time class="msg__time">10:09</time>
+            <span class="msg__status" aria-label="gesendet">✓</span>
+          </div>
+        </div>
+        <div class="msg msg--in">
+          <div class="msg__bubble tw-bubble-in">Top! Treffen wir uns um 17:00?</div>
+          <time class="msg__time">10:10</time>
+        </div>
+        <div class="msg msg--out is-delivered">
+          <div class="msg__bubble tw-bubble-out">Passt! Bis später 👋</div>
+          <div class="msg__meta">
+            <time class="msg__time">10:12</time>
+            <span class="msg__status" aria-label="zugestellt">✓✓</span>
+          </div>
+        </div>
+        <div class="msg msg--out is-read">
+          <div class="msg__bubble tw-bubble-out">Perfekt, freu mich! 📎</div>
+          <div class="msg__meta">
+            <time class="msg__time">10:13</time>
+            <span class="msg__status" aria-label="gelesen">✓✓</span>
+          </div>
+        </div>
+      </section>
+
+      <form class="composer" action="#" onsubmit="return false;">
+        <button class="composer__btn" type="button" aria-label="Emoji hinzufügen">😊</button>
+        <label class="composer__btn" aria-label="Datei anhängen">
+          📎
+          <input id="fileInput" type="file" multiple hidden />
+        </label>
+        <div class="composer__attachments" aria-live="polite"></div>
+        <input class="composer__input" type="text" placeholder="Nachricht schreiben…" />
+        <button class="composer__send" type="submit">Senden</button>
+      </form>
+    </main>
+  </div>
+
+  <template id="chipTpl">
+    <span class="chip" data-name="">
+      <span class="chip__icon">📄</span>
+      <span class="chip__label"></span>
+      <button class="chip__x" title="entfernen">×</button>
+    </span>
+  </template>
+</body>
+
+</html>

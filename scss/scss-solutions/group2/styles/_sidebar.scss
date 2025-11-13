@@ -1,0 +1,79 @@
+@use 'mixins' as *;
+
+.sidebar {
+  @include card;
+  /*background-color: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 20px;*/
+
+  &__header {
+    padding: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &__search {
+    padding: 12px 16px;
+  }
+
+  &__search-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+  }
+}
+
+.chatlist {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 40px 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 12px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    &--active {
+      background-color: rgba(16, 185, 129, 0.12);
+    }
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-weight: 600;
+  }
+
+  &__last {
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+
+  &__time {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+}
